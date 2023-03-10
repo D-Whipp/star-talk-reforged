@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 
+import { AiOutlineStar } from 'react-icons/ai';
+
 function App() {
   return (
     <div className="App">
@@ -17,6 +19,9 @@ function App() {
         >
           Learn React
         </a>
+        <h3>
+          <AiOutlineStar />
+        </h3>
       </header>
     </div>
   );
