@@ -1,6 +1,6 @@
-import './App.css';
+import './App.scss';
 
-import { AiOutlineStar } from 'react-icons/ai';
+// import { AiOutlineStar } from 'react-icons/ai';
 
 const App = () => {
     const directoryOfComments = [
@@ -51,8 +51,10 @@ const App = () => {
                 </ul>
             </nav>
             <div className="topics-container">
-                <div className="image-container" />
-                   
+                <div className="image-container"> 
+                <h2 className='image-title'>Celestial Body Name</h2>
+                <div className='image' />  
+                </div>
                 <div className="discussion-container">
                     <h2>The Discussion</h2>
                     {directoryOfComments.map(
