@@ -1,5 +1,7 @@
 import './App.scss';
 
+import Heading from './components/heading/heading.component';
+
 // import { AiOutlineStar } from 'react-icons/ai';
 
 const App = () => {
@@ -69,15 +71,16 @@ const App = () => {
         },
     ];
 
+    const spaceImages = [
+        {
+            name: 'moon',
+            url: 'https://en.wikipedia.org/wiki/Moon#/media/File:FullMoon2010.jpg',
+        },
+    ];
+
     return (
         <div className="body-container">
-            <div className="website-title-bar">
-                <h1>Star Talk Reforged</h1>
-                <ul>
-                    <li>Login</li>
-                    <li>Signup</li>
-                </ul>
-            </div>
+            <Heading />
             <nav>
                 <a href="!#">Planet</a>
                 <a href="!#">Planet</a>
