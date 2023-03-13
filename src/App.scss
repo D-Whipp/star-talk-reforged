@@ -14,8 +14,8 @@ body {
     width: 80%;
 }
 
-// Navigation
-nav {
+// Website Title Bar
+.website-title-bar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -36,6 +36,25 @@ nav {
     }  
 }
 
+// Navigation
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 0;
+    color: black;
+    text-shadow: -1px -2px #99f7f2;
+    padding: 6px 10px;
+    margin: 0 15px;
+    transition: all 0.2s;
+    
+    a {
+        color: #99f7f2;
+        margin: 5px 0;
+        text-decoration: none;
+    }
+}
+
 // Topics Container
 .topics-container {
     display: flex;
@@ -46,11 +65,16 @@ nav {
 // Celestial Image Container
 .image-container {
     text-align: center;
+    // position: fixed;
+    // top: 20%;
 }
 
 .image-title {
-    color: #99f7f2;
-    padding: 15px 0;
+    // color: #99f7f2;
+    text-shadow: -1px -2px #99f7f2;
+    line-height: 1.7;
+    letter-spacing: 1.4px;
+    // padding: 15px 0;
 }
 
 .image {
@@ -61,15 +85,37 @@ nav {
     width: 400px;
     border: 1px solid #99f7f2;
     border-radius: 5px;
-
+    margin-top: 15px;
 }
 
 // Discussion's Container
+.discussion-container {
+    text-align: center;
+    overflow-y: scroll;
+    max-height: 700px;
+    margin-top: 15px;
+}
+
+.discussion-title {
+    margin-top: 10px;
+    text-shadow: -1px -2px #99f7f2;    
+}
+
 .comment-container {
     color: #99f7f2;
     background-color: grey;
     margin: 30px;
     padding: 15px;
-    border: 1px solid #99f7f2;
+    border: 5px solid #D0D6F9;
     border-radius: 5px;
+}
+
+.comment-text {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.time-stamp {
+    font-size: 10px;
+    margin-top: 10px;
 }

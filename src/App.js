@@ -39,24 +39,66 @@ const App = () => {
             timeStamp: '8:00AM',
             dateStamp: '10/11/2023',
         },
+        {
+            id: 6,
+            author: 'Josh Doe',
+            comment: "I am Josh Doe's comment.",
+            timeStamp: '8:00AM',
+            dateStamp: '10/11/2023',
+        },
+        {
+            id: 7,
+            author: 'Josh Doe',
+            comment: "I am Josh Doe's comment.",
+            timeStamp: '8:00AM',
+            dateStamp: '10/11/2023',
+        },
+        {
+            id: 8,
+            author: 'Josh Doe',
+            comment: "I am Josh Doe's comment.",
+            timeStamp: '8:00AM',
+            dateStamp: '10/11/2023',
+        },
+        {
+            id: 9,
+            author: 'Josh Doe',
+            comment: "I am Josh Doe's comment.",
+            timeStamp: '8:00AM',
+            dateStamp: '10/11/2023',
+        },
     ];
 
     return (
         <div className="body-container">
-            <nav>
+            <div className="website-title-bar">
                 <h1>Star Talk Reforged</h1>
                 <ul>
                     <li>Login</li>
                     <li>Signup</li>
                 </ul>
+            </div>
+            <nav>
+                <a href="!#">Planet</a>
+                <a href="!#">Planet</a>
+                <a href="!#">Planet</a>
+                <a href="!#">Planet</a>
+                <a href="!#">Planet</a>
+                <a href="!#">Planet</a>
+                <a href="!#">Planet</a>
+                <a href="!#">Planet</a>
             </nav>
             <div className="topics-container">
-                <div className="image-container"> 
-                <h2 className='image-title'>Celestial Body Name</h2>
-                <div className='image' />  
+                <div className="image-container">
+                    <h2 className="image-title">
+                        Celestial Body Name
+                    </h2>
+                    <div className="image" />
                 </div>
                 <div className="discussion-container">
-                    <h2>The Discussion</h2>
+                    <h2 className="discussion-title">
+                        The Discussion
+                    </h2>
                     {directoryOfComments.map(
                         ({
                             id,
@@ -79,11 +121,10 @@ const App = () => {
                                     </span>
                                 </p>
                                 <p className="time-stamp">
-                                    on{' '}
                                     <span className="date">
                                         {dateStamp}
                                     </span>{' '}
-                                    at{' '}
+                                    -{' '}
                                     <span className="time">
                                         {timeStamp}
                                     </span>
