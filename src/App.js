@@ -1,8 +1,9 @@
 import './App.scss';
 
 import Heading from './components/heading/heading.component';
-import Discussion from './components/discussion/discussion.component';
+import Navigation from './components/navigation/navigation.component';
 import Topics from './components/topics/topics.component';
+// DISCUSSIONS COMPONENT IS IMPORTED INTO TOPICS COMPONENT
 
 // import { AiOutlineStar } from 'react-icons/ai';
 
@@ -10,17 +11,8 @@ const App = () => {
     return (
         <div className="body-container">
             <Heading />
-            <nav>
-                <a href="!#">Planet</a>
-                <a href="!#">Planet</a>
-                <a href="!#">Planet</a>
-                <a href="!#">Planet</a>
-                <a href="!#">Planet</a>
-                <a href="!#">Planet</a>
-                <a href="!#">Planet</a>
-                <a href="!#">Planet</a>
-            </nav>
-                <Topics />
+            <Navigation />
+            <Topics />
         </div>
     );
 };
