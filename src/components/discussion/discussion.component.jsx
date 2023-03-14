@@ -1,5 +1,7 @@
 import './discussion.styles.scss';
 
+// THIS COMPONENT IS EXPORTED TO TOPICS COMPONENT
+
 const Discussion = () => {
     const directoryOfComments = [
         {
@@ -92,4 +94,6 @@ const Discussion = () => {
     );
 };
 
+// THIS COMPONENT IS EXPORTED TO TOPICS COMPONENT
 export default Discussion;
+// THIS COMPONENT IS EXPORTED TO TOPICS COMPONENT
