@@ -1,19 +1,13 @@
-import './App.scss';
+import { Routes, Route } from 'react-router-dom';
 
-import Heading from './components/heading/heading.component';
-import Navigation from './components/navigation/navigation.component';
-import Topics from './components/topics/topics.component';
-// DISCUSSIONS COMPONENT IS IMPORTED INTO TOPICS COMPONENT
-
+import Home from './routes/home/home.component';
 // import { AiOutlineStar } from 'react-icons/ai';
 
 const App = () => {
     return (
-        <div className="body-container">
-            <Heading />
-            <Navigation />
-            <Topics />
-        </div>
+        <Routes>
+            <Route path="/" element={<Home />} />
+        </Routes>
     );
 };
 
