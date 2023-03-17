@@ -21,7 +21,6 @@ const Topics = () => {
         await console.log(container);
     }, []);
 
-    
     return (
         <Fragment>
             <Particles
@@ -39,7 +38,7 @@ const Topics = () => {
                         events: {
                             onClick: {
                                 enable: true,
-                                mode: 'pull',
+                                mode: 'push',
                             },
                             onHover: {
                                 enable: true,
@@ -65,11 +64,11 @@ const Topics = () => {
                             color: '#D0D6F9',
                             distance: 150,
                             enable: true,
-                            opacity: 0.5,
+                            opacity: 0,
                             width: 1,
                         },
                         collisions: {
-                            enable: true,
+                            enable: false,
                         },
                         move: {
                             directions: 'none',
@@ -86,7 +85,7 @@ const Topics = () => {
                                 enable: true,
                                 area: 800,
                             },
-                            value: 50,
+                            value: 30,
                         },
                         opacity: {
                             value: 0.5,
@@ -95,7 +94,7 @@ const Topics = () => {
                             type: 'star',
                         },
                         size: {
-                            value: { min: 1, max: 5 },
+                            value: { min: 0.1, max: 3 },
                         },
                     },
                     detectRetina: true,

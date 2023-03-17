@@ -1,6 +1,6 @@
-import './navigation.styles.scss';
+import './planets-directory.styles.scss';
 
-const Navigation = () => {
+const PlanetsDirectory = () => {
     return (
         <nav>
             <a href="!#">Sun</a>
@@ -17,4 +17,4 @@ const Navigation = () => {
     );
 };
 
-export default Navigation;
+export default PlanetsDirectory;
