@@ -1,6 +1,8 @@
 // Currently not needed
 import '../../App.scss';
 
+import { Outlet } from 'react-router-dom';
+
 import Navigation from '../navigation/navigation.component';
 import Topics from '../../components/topics/topics.component';
 // DISCUSSIONS COMPONENT IS IMPORTED INTO TOPICS COMPONENT
@@ -9,9 +11,12 @@ import Topics from '../../components/topics/topics.component';
 
 const Home = () => {
     return (
-        <div className="body-container">
-            <Navigation />
-            <Topics />
+        <div>
+            <div className="body-container">
+                <Navigation />
+                <Topics />
+            </div>
+            <Outlet />
         </div>
     );
 };

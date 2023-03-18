@@ -4,14 +4,19 @@ import Home from './routes/home/home.component';
 // import { AiOutlineStar } from 'react-icons/ai';
 
 const Login = () => {
-    return <h1 style={{color:'white'}}>Login is listening...</h1>;
+    return (
+        <h1 style={{ color: 'white' }}>
+            Hello Seattle! Login is listening...
+        </h1>
+    );
 };
 
 const App = () => {
     return (
         <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/login" element={<Login />} />
+            <Route path="/home" element={<Home />}>
+                <Route path="login" element={<Login />} />
+            </Route>
         </Routes>
     );
 };
