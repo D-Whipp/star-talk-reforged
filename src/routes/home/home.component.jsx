@@ -10,10 +10,10 @@ import Topics from '../../components/topics/topics.component';
 // import { AiOutlineStar } from 'react-icons/ai';
 
 const Home = () => {
+    // <Navigation />
     return (
         <div>
             <div className="body-container">
-                <Navigation />
                 <Topics />
             </div>
             <Outlet />

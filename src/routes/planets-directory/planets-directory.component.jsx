@@ -1,5 +1,7 @@
 import './planets-directory.styles.scss';
 
+// PlanetsDirectory is exported to the Navigation component
+
 const PlanetsDirectory = () => {
     return (
         <nav>

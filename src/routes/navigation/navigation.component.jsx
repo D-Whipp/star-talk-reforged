@@ -1,5 +1,7 @@
 import './navigation.styles.scss';
 
+import { Outlet } from 'react-router-dom';
+
 import PlanetsDirectory from '../planets-directory/planets-directory.component';
 
 const Navigation = () => {
@@ -13,6 +15,7 @@ const Navigation = () => {
         </ul>
         </div>
         <PlanetsDirectory />
+        <Outlet />
         </>
     );
 };
