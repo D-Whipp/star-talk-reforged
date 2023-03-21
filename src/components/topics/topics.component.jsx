@@ -3,6 +3,7 @@ import './topics.styles.scss';
 
 import Discussion from '../discussion/discussion.component';
 
+// Below is Code for React Particles which are the stars you see floating around the page
 // React Particles
 import { useCallback } from 'react';
 import Particles from 'react-particles';
