@@ -3,8 +3,6 @@ import './navigation.styles.scss';
 import { Fragment } from 'react';
 import { Outlet, Link } from 'react-router-dom';
 
-// import { ReactComponent as StarLogo } from '../../assets/star.svg';
-
 import PlanetsDirectory from '../planets-directory/planets-directory.component';
 import Icon from '../../assets/star-logo.component';
 
