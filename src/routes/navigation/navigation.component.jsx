@@ -13,6 +13,7 @@ const Navigation = () => {
                 <Link className="website-title" to="/">
                 <Icon />
                 <h1>Star Talk Reforged</h1>
+                <Icon />
                 </Link>
                 <div className="nav-links-container">
                     <Link className="nav-link" to="/login">
